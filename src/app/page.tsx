@@ -15,7 +15,10 @@ const Home = () => {
           Pianote is a website that allows you to transpose piano chords and
           melodies based on key.
         </div>
-        <div className="mt-4 font-bold">Soon™</div>
+        {/* <div className="mt-4 font-bold">Soon™</div> */}
+        <div className="mt-4 font-bold">
+          <a href="/home">Enter &gt;</a>
+        </div>
       </div>
     </div>
   )
