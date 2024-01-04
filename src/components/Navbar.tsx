@@ -2,17 +2,22 @@ import Image from 'next/image'
 function Navbar() {
   return (
     <div>
-      <nav className="flex flex-row bg-slate-300 py-3 ">
-        <div className="flex flex-row w-screen">
+      <nav className="flex flex-row py-3 px-6 w-screen">
+        <div className="flex flex-row justify-start">
           <Image
             src="/img/piano-icon.png"
-            width={35}
-            height={35}
-            className="flex bg-white"
+            width={30}
+            height={30}
+            className="bg-white"
+            alt="Pianote Logo"
           ></Image>
+          <div className="flex flex-row justify-center items-center text-lg font-bold ml-3">
+            Pianote
+          </div>
         </div>
-        <div>
-          <ul className="flex flex-row justify-center items-center space-x-4  ">
+        <div className="flex flex-row flex-grow"></div>
+        <div className="flex flex-row justify-end">
+          <ul className="flex flex-row justify-center items-center space-x-5">
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
