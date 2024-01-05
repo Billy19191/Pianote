@@ -2,16 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-span {
+span#chord {
   position: relative;
   font-weight: 700;
   display: inline-block;
   left: -3px;
   width: 25px;
-  top: -20px;
-  margin-left: -20px;
-  /* word-wrap: normal; */
+  top: -45px;
+  margin-left: -25px;
+  word-wrap: normal;
   color: red;
+}
+
+div#melody {
+  display: block;
 }
 
 p {
