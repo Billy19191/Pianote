@@ -15,8 +15,8 @@ function songs() {
           I found a love
           <span>G</span>for me<span>Em</span>
         </p> */}
-        {song.map((each) => (
-          <div>
+        {song.map((each, songIndex) => (
+          <div key={songIndex}>
             <div id="melody">{each.melody}</div>
             {each.lyric.map((subeach, index) => (
               <span>
